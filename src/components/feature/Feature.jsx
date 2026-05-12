@@ -34,7 +34,7 @@ const projects = [
     title: "Social search and multi channel content to #1",
     year: "[2023-2025]",
     tag: "UK holidays",
-    bgColor: "#c598c3",
+    bgColor: "#ffb8b8",
     image:
       "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=1400",
   },
@@ -143,7 +143,7 @@ const Feature = () => {
   };
 
   return (
-    <section ref={sectionRef} className="relative lg:cursor-none">
+    <section ref={sectionRef} className="relative lg:cursor-none rounded-2xl">
       {/* CUSTOM CURSOR */}
       <div
         ref={cursorRef}
@@ -155,12 +155,12 @@ const Feature = () => {
         </div>
       </div>
 
-      <div className="min-h-screen lg:h-screen overflow-visible lg:overflow-hidden p-3">
-        <div className="w-full h-full bg-black rounded-[30px] md:rounded-[40px] overflow-hidden relative border border-white/10">
+      <div className="min-h-screen lg:h-screen overflow-visible lg:overflow-hidden">
+        <div className="w-full h-full bg-black rounded-2xl overflow-hidden relative border border-white/10">
           <div className="flex flex-col lg:grid lg:grid-cols-2 h-full">
             {/* LEFT SIDE*/}
-            <div className="relative w-full lg:h-full flex flex-col px-6 md:px-16">
-              <div className="static lg:absolute top-0 left-0 right-0 pt-10 lg:pt-12 pb-6 lg:px-16 z-30 bg-black lg:bg-transparent">
+            <div className="relative w-full lg:h-full flex flex-col px-6">
+              <div className="static lg:absolute top-0 left-0 right-0 pt-10 lg:pt-12 pb-6 px-6 z-30 bg-black lg:bg-transparent">
                 <p className="text-white font-medium opacity-80 tracking-wider text-[20px] md:text-[22px]">
                   Featured Work
                 </p>

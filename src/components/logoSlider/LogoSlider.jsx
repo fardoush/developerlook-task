@@ -19,10 +19,10 @@ const LogoSlider = () => {
   const displayLogos = [...logos, ...logos, ...logos];
 
   return (
-    <div className="w-full bg-[#f0f0f0] py-10 overflow-hidden border-y border-gray-200 select-none">
+    <div className="w-full bg-[#f0f0f0] py-6 lg:py-10 overflow-hidden  select-none">
       <div className="w-full mx-auto flex md:flex-row flex-col items-center">
-        {/* Left Fixed Text */}
-        <div className="whitespace-nowrap px-10 z-10 bg-[#f0f0f0] shadow-[10px_0_15px_-5px_#f0f0f0]">
+        {/* Left Text */}
+        <div className="whitespace-nowrap pr-4 z-10 bg-[#f0f0f0] shadow-[10px_0_15px_-5px_#f0f0f0]">
           <p className="text-sm md:text-base font-bold text-black tracking-tight">
             The agency behind...
           </p>
@@ -45,7 +45,7 @@ const LogoSlider = () => {
             {displayLogos.map((logo, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 grayscale hover:grayscale-0 transition-all duration-300 opacity-99 hover:opacity-100"
+                className="flex-shrink-0 grayscale transition-all duration-300 opacity-99 hover:opacity-100"
               >
                 <img
                   src={logo.url}
